@@ -204,15 +204,27 @@ interface User{
   email :string,
   userId:number
   googleID?: string
-  startTrail:()=>string
+  // startTrail:()=>string
+  startTrail():string
+  getCoupen(couponname:string , value:number):number
 }
-const h:User={ 
+interface User{
+  gitHubToken : string
+}
+interface Admin extends User{
+role:"admin"  | "ere"| "wdw"
+}
+const h:Admin={ 
   dbID :3 , 
   email: "sd@gmail.com" 
   ,userId:9,
 startTrail : ()=>{
   return "sds"
-}
+},
+getCoupen: (name:"asad" , off :89)=>{
+return 78;
+},
+gitHubToken:"w"
 }
 h.email ="sdd@gmail.com"
 export{}

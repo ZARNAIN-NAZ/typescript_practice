@@ -190,5 +190,29 @@
 // newUser.push(true)
 
 //-----------ENUMS------------------
+// enum seatChoice{
+//   aisle=10 , //take values itself by sequence for eg start 1st property with 0 so automtically 2nd prop would be 1 and so on
+//   middle=90 ,
+//   window="nnn" ,
+//   forth
+// }
+// const hcSeat  = seatChoice.aisle
 
+// --------------------------INTERFACE---------------------
+interface User{
+  readonly dbID :number,
+  email :string,
+  userId:number
+  googleID?: string
+  startTrail:()=>string
+}
+const h:User={ 
+  dbID :3 , 
+  email: "sd@gmail.com" 
+  ,userId:9,
+startTrail : ()=>{
+  return "sds"
+}
+}
+h.email ="sdd@gmail.com"
 export{}

@@ -84,29 +84,29 @@
 
 
 // ------------------abstract class----------------
-abstract class TakePhoto{
-    constructor(
-        public cameraMode: string,
-        public filter :string
-    ){}
-    abstract getSepia():void
-      getReelTime():number{
-      //some calculation
-      return 8
-      }
-}
+// abstract class TakePhoto{
+//     constructor(
+//         public cameraMode: string,
+//         public filter :string
+//     ){}
+//     abstract getSepia():void
+//       getReelTime():number{
+//       //some calculation
+//       return 8
+//       }
+// }
 // const myVar = new TakePhoto("tset" , "wew") //it gives error if we write abstract in class name if thers no abstract then its fine no error is here
-class Instagram extends TakePhoto{
-constructor(public cameraMode:string,
-   public filter:string,
-   public burst : number
-    ){
-        super(cameraMode , filter)
-    }
-    getSepia(): void {
-      console.log("sepia")  
-    }
+// class Instagram extends TakePhoto{
+// constructor(public cameraMode:string,
+//    public filter:string,
+//    public burst : number
+//     ){
+//         super(cameraMode , filter)
+//     }
+//     getSepia(): void {
+//       console.log("sepia")  
+//     }
 
-}
-const myVar = new Instagram("tset" , "wew" , 9)  //now we can use abstract class in extended class but not anywhere else
-myVar.getReelTime()
+// }
+// const myVar = new Instagram("tset" , "wew" , 9)  //now we can use abstract class in extended class but not anywhere else
+// myVar.getReelTime()
